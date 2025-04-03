@@ -5,6 +5,16 @@ document.addEventListener('DOMContentLoaded', function() {
         document.querySelector('.menu-icon').classList.toggle('active');
     });
 
+    // Add event listeners to navigation links to close the menu when clicked
+    const navLinks = document.querySelectorAll('.nav-menu li a');
+    navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            // Close the mobile menu
+            document.querySelector('.nav-menu').classList.remove('active');
+            document.querySelector('.menu-icon').classList.remove('active');
+        });
+    });
+
     // Language toggle functionality
     const langButton = document.querySelector('.lang-btn');
     langButton.addEventListener('click', function() {

@@ -940,6 +940,20 @@ picture {
     object-fit: contain;
 }
 
+#about b {
+    font-family: 'Rubik-Bold', Arial, sans-serif;
+}
+
+#about h1 {
+    padding: 4rem 0 2.5rem;
+}
+
+#about img {
+    width: 100%;
+    height: auto;
+    padding: 2rem 0;
+}
+
 /* Add to your existing media queries */
 @media (max-width: 480px) {
     .catalog-tile img,

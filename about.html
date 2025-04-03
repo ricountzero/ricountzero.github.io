@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>ООО ВТТ - О нас</title>
+    <!-- Preload fonts for better performance -->
+    <link rel="preload" href="fonts/Rubik-Medium.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="fonts/Rubik-Regular.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="fonts/Rubik-Bold.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="stylesheet" href="styles/main.css?v=1.0.2">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <picture>
+                <source media="(max-width: 480px)" srcset="images/logo-small.svg">
+                <source media="(max-width: 768px)" srcset="images/logo-medium.svg">
+                <img src="images/logo.svg" alt="VTT_SMARHON" style="width: 100px; height: auto;">
+            </picture>   
+            <nav>
+                <div class="menu-toggle">
+                    <div class="menu-icon">
+                        <span class="line line-1"></span>
+                        <span class="line line-2"></span>
+                        <span class="line line-3"></span>
+                    </div>
+                    <span class="menu-text"></span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#about" class="shadow-filter">О нас</a></li>
+                    <li><a href="#features" class="shadow-filter">Каталог</a></li>
+                    <li><a href="#contact" class="shadow-filter">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="language-toggle">
+                <button class="lang-btn" data-current-lang="rus" data-toggle-lang="eng">ENG</button>
+            </div>
+        </header>
+        <section id="about">
+            <h1>О нас</h1>
+            <p><b>ООО  «ВТТ»</b> — высокотехнологичное предприятие из Республики Беларусь, специализирующаяся на всём спектре работ в области <b>вакуумной техники и технологий</b>.
+                <br>
+                <br>
+                Специалисты   нашего предприятия имеют <b>огромный опыт</b> разработки и изготовления вакуумного оборудования различного функционального назначения. Накопленный опыт работ в области вакуумной техники позволил систематизировать полученные знания и наметить направления деятельности предприятия в области <b>новых технологий</b>.
+                <br>
+                <br>
+                На сегодняшний день, нами изготовлены и поставлены вакуумные установки в такие страны как <b>Россия, США, Сирия, Тайвань, Китай, Эстония, Канада, Польша, Украина, Турция, Литва  и др.</b> Мы имеем тесные производственные и научные связи со многими белорусскими, российскими и западными институтами и предприятиями.</p>
+                <img src="images/building.jpg" alt="about">
+        </section>
+        <footer>
+            <h3>ООО «ВТТ»</h3>
+            <p>Выполняем весь спектр работ<br>в области вакуумной техники<br>и технологий</p>
+            
+            <section id="arrow-list">
+                <ul class="arrow-bullet-list">
+                    <li><span class="arrow">→</span><h3>Вакуумные установки</h3></li>
+                    <li><span class="arrow">→</span><h3>Технологические источники</h3></li>
+                    <li><span class="arrow">→</span><h3>Комплектующие</h3></li>
+                    <li><span class="arrow">→</span><h3>Технологии</h3></li>
+                </ul>
+            </section>
+
+            <section id="contact-info">
+                <ul class="phone-list">
+                    <li>
+                        <span class="phone-icon">
+                            <img src="images/phone.svg">
+                        </span>
+                        <a href="tel:+375159241290">+375 15 9241290</a>
+                    </li>
+                    <li>
+                        <span class="phone-icon">
+                            <img src="images/phone.svg">
+                        </span>
+                        <a href="tel:++375291167806">+375 29 1167806</a>
+                    </li>
+                </ul>
+                <div class="address">
+                    <span class="address-icon">
+                        <img src="images/address.svg">
+                    </span>
+                    <span class="address-text">Республика Беларусь, г.Сморгонь.</span>
+                    <span class="address-text">проезд Я.Коласа 4</span>
+                </div>
+                <div class="mail">
+                    <span class="mail-icon">
+                        <img src="images/mail.svg">
+                    </span>
+                    <span class="mail-text">231042, Республика Беларусь</span>
+                    <span class="mail-text">г.Сморгонь. проезд Я.Коласа 4.</span>
+                </div>
+            </section>
+        </footer>
+    </div>
+    
+    <!-- Include the external JavaScript file -->
+    <script src="js/main.js"></script>
+</body>
+</html>
