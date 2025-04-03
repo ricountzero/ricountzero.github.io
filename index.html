@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>ООО ВТТ</title>
+    <!-- Preload fonts for better performance -->
+    <link rel="preload" href="fonts/Rubik-Medium.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="fonts/Rubik-Regular.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="fonts/Rubik-Bold.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="stylesheet" href="styles/main.css?v=1.0.2">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="images/logo.svg" alt="VTT_SMARHON" style="width: 100px; height: auto;">   
+            <nav>
+                <div class="menu-toggle">
+                    <div class="menu-icon">
+                        <span class="line line-1"></span>
+                        <span class="line line-2"></span>
+                        <span class="line line-3"></span>
+                    </div>
+                    <span class="menu-text"></span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="shadow-filter">О нас</a></li>
+                    <li><a href="#features" class="shadow-filter">Каталог</a></li>
+                    <li><a href="#contact" class="shadow-filter">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="language-toggle">
+                <button class="lang-btn" data-current-lang="eng" data-toggle-lang="rus">RUS</button>
+            </div>
+        </header>
+        <section id="logo_background" class="logo_background">
+            <img src="images/VTT-700.png" alt="vtt_700" style="width: 100%; height: auto;">
+        </section>
+        <section id="about">
+            <h2>Вакуумные технологии полный спектр услуги:</h2>
+            <ul class="services-list">
+                <li>вакуумные установки</li>
+                <li>технологические источники</li>
+                <li>комплектующие</li>
+                <li>технологии</li>
+                <li>собственное производство</li>
+            </ul>
+            <a href="#features" class="catalog-button shadow-filter">В каталог</a>
+        </section>
+        <section id="catalog">
+            <h1>Каталог</h1>
+            <div class="catalog-tiles">
+                <div class="tile-row">
+                    <div class="catalog-tile">
+                        <h3>Вакуумные установки</h3>
+                        <img src="images/VTT-1100_optik.png" alt="Вакуумные установки">
+                    </div>
+                    <div class="catalog-tile">
+                        <h3>Технологические источники</h3>
+                        <img src="images/VTT-700-E21.png" alt="Технологические источники">
+                    </div>
+                </div>
+                <div class="tile-row">
+                    <div class="catalog-tile">
+                        <h3>Комплектующие</h3>
+                        <img src="images/VTT-1500.png" alt="Комплектующие">
+                    </div>
+                    <div class="catalog-tile">
+                        <h3>Технологии</h3>
+                        <img src="images/VTT-300.png" alt="Технологии">
+                    </div>
+                </div>
+            </div>
+            <a href="#features" class="catalog-button shadow-filter">В каталог</a>
+        </section>
+        <section id="chosen">
+            <h1>Почему<br>выбирают нас</h1>
+            <div class="chosen-tiles">
+                <div class="tile-row">
+                    <div class="chosen-tile">
+                        <h1>01</h1>
+                        <div class="section-divider"></div>
+                        <p>Собственное<br>производство</p>
+                    </div>
+                    <div class="chosen-tile">
+                        <h1>02</h1>
+                        <div class="section-divider"></div>
+                        <p>Разработка и производство установок по индивидуальному заказу</p>
+                    </div>
+                </div>
+                <div class="tile-row">
+                    <div class="chosen-tile">
+                        <h1>03</h1>
+                        <div class="section-divider"></div>
+                        <p>Высоко-качественные комплектующие</p>
+                    </div>
+                    <div class="chosen-tile">
+                        <h1>04</h1>
+                        <div class="section-divider"></div>
+                        <p>Постоянная сервисная поддержка</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="certificates">
+            <h1>Наши<br>сертификаты<br>и дипломы</h1>
+            <div class="certificate-carousel">
+                <div class="carousel-container">
+                    <div class="carousel-slides-wrapper">
+                        <div class="carousel-slide" data-slide="0">
+                            <img src="images/certificate01.png" alt="Certificate 1">
+                        </div>
+                        <div class="carousel-slide" data-slide="1">
+                            <img src="images/certificate02.png" alt="Certificate 2">
+                        </div>
+                        <div class="carousel-slide" data-slide="2">
+                            <img src="images/certificate03.png" alt="Certificate 3">
+                        </div>
+                        <div class="carousel-slide" data-slide="3">
+                            <img src="images/certificate04.png" alt="Certificate 4">
+                        </div>
+                        <div class="carousel-slide" data-slide="4">
+                            <img src="images/certificate05.png" alt="Certificate 5">
+                        </div>
+                        <div class="carousel-slide" data-slide="5">
+                            <img src="images/certificate06.png" alt="Certificate 6">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-navigation">
+                    <button class="carousel-arrow prev-arrow">←</button>
+                    <div class="carousel-dots">
+                        <!-- Dots will be generated by JavaScript -->
+                    </div>
+                    <button class="carousel-arrow next-arrow">→</button>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <h3>ООО «ВТТ»</h3>
+            <p>Выполняем весь спектр работ<br>в области вакуумной техники<br>и технологий</p>
+            
+            <section id="arrow-list">
+                <ul class="arrow-bullet-list">
+                    <li><span class="arrow">→</span><h3>Вакуумные установки</h3></li>
+                    <li><span class="arrow">→</span><h3>Технологические источники</h3></li>
+                    <li><span class="arrow">→</span><h3>Комплектующие</h3></li>
+                    <li><span class="arrow">→</span><h3>Технологии</h3></li>
+                </ul>
+            </section>
+
+            <section id="contact-info">
+                <ul class="phone-list">
+                    <li>
+                        <span class="phone-icon">
+                            <img src="images/phone.svg">
+                        </span>
+                        <a href="tel:+375159241290">+375 15 9241290</a>
+                    </li>
+                    <li>
+                        <span class="phone-icon">
+                            <img src="images/phone.svg">
+                        </span>
+                        <a href="tel:++375291167806">+375 29 1167806</a>
+                    </li>
+                </ul>
+                <div class="address">
+                    <span class="address-icon">
+                        <img src="images/address.svg">
+                    </span>
+                    <span class="address-text">Республика Беларусь, г.Сморгонь.</span>
+                    <span class="address-text">проезд Я.Коласа 4</span>
+                </div>
+                <div class="mail">
+                    <span class="mail-icon">
+                        <img src="images/mail.svg">
+                    </span>
+                    <span class="mail-text">231042, Республика Беларусь</span>
+                    <span class="mail-text">г.Сморгонь. проезд Я.Коласа 4.</span>
+                </div>
+            </section>
+        </footer>
+    </div>
+    
+    <!-- Include the external JavaScript file -->
+    <script src="js/main.js"></script>
+</body>
+</html>
