@@ -922,6 +922,7 @@ img {
 picture {
     display: inline-block; /* Ensures picture behaves like img */
     width: 100%;
+    text-align: center;
 }
 
 .carousel-slide picture,
