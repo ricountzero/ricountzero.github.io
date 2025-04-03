@@ -56,6 +56,13 @@ for img in images/*.png; do
     fi
 done
 
+# Process JPG/JPEG files
+for img in images/*.jpg images/*.jpeg; do
+    if [ -f "$img" ]; then
+        optimize_image "$img"
+    fi
+done
+
 # Copy SVG files (they're already small and don't need resizing)
 for svg in images/*.svg; do
     if [ -f "$svg" ]; then
