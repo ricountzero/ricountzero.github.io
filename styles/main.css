@@ -648,6 +648,51 @@ footer h3 {
     padding: 0;
 }
 
+/* Contact Row Layout */
+.contact-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.contact-info {
+    flex: 1;
+    min-width: 230px;
+    margin-bottom: 20px;
+}
+
+.contact-tel {
+    flex: 1;
+    min-width: 150px;
+    margin-bottom: 20px;
+}
+
+.contact-tel a {
+    color: #323632;
+    text-decoration: none;
+    font-family: 'Rubik-Regular', Arial, sans-serif;
+}
+
+.contact-info h3, .contact-tel h3 {
+    font-family: 'Rubik-Regular', Arial, sans-serif;
+    font-size: 19px;
+    margin-bottom: 0.4rem;
+}
+
+.contact-logo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-logo img {
+    width: 200px;
+    height: auto;
+}
+
 .phone-list {
     list-style: none;
     padding: 0;
@@ -712,6 +757,26 @@ footer h3 {
     padding-left: 2rem;
     font-size: 1rem;
     color: white;
+}
+
+.mail-text {
+    display: block;
+    padding-left: 26px;
+}
+
+/* Map container styles */
+.map-container {
+    margin: 2rem 0;
+    padding: 1rem 0;
+}
+
+.map-container h3 {
+    font-family: 'Rubik-Medium', Arial, sans-serif;
+    margin-bottom: 1rem;
+}
+
+#yandex-map {
+    overflow: hidden;
 }
 
 /* Media Queries */
@@ -952,6 +1017,10 @@ picture {
     width: 100%;
     height: auto;
     padding: 2rem 0;
+}
+
+#contact h1 {
+    padding: 4rem 0 2.5rem;
 }
 
 /* Add to your existing media queries */
