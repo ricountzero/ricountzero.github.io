@@ -1,5 +1,5 @@
 // Fetch and display the name from vacuum-systems.json
-fetch('http://localhost:8000/data/vacuum-systems.json')
+fetch('../data/vacuum-systems.json')
     .then(response => response.json())
     .then(data => {
         const opticCategory = data.find(category => category.name === 'optic');
