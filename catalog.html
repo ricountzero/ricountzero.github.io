@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>ООО ВТТ - Каталог</title>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-touch-icon-152x152.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#2B8AC5">
+    <link rel="shortcut icon" href="favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#2B8AC5">
+    <meta name="msapplication-config" content="favicon/browserconfig.xml">
+    <meta name="theme-color" content="#2B8AC5">
+    <!-- Preload fonts for better performance -->
+    <link rel="preload" href="fonts/Rubik-Medium.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="fonts/Rubik-Regular.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="fonts/Rubik-Bold.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="stylesheet" href="styles/main.css?v=1.0.2">
+    <link rel="stylesheet" href="styles/catalog.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <picture>
+                <source media="(max-width: 480px)" srcset="images/logo-small.svg">
+                <source media="(max-width: 768px)" srcset="images/logo-medium.svg">
+                <a href="./index.html">
+                    <img src="images/logo.svg" alt="VTT_SMARHON" style="width: 100px; height: auto;">
+                </a>
+            </picture>  
+            <nav>
+                <div class="menu-toggle">
+                    <div class="menu-icon">
+                        <span class="line line-1"></span>
+                        <span class="line line-2"></span>
+                        <span class="line line-3"></span>
+                    </div>
+                    <span class="menu-text"></span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#about" class="shadow-filter">О нас</a></li>
+                    <li><a href="#features" class="shadow-filter">Каталог</a></li>
+                    <li><a href="./contacts.html" class="shadow-filter">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="language-toggle">
+                <button class="lang-btn" data-current-lang="rus" data-toggle-lang="eng">ENG</button>
+            </div>
+        </header>
+        <section id="catalog">
+            <h1>Каталог</h1>
+            <div class="vertical-squares">
+                <div class="square">
+                    <div class="catalog-tree">
+                        <ul class="tree-menu">
+                            <li class="tree-item">
+                                <span class="tree-label"><h3>Вакуумные установки</h3></span>
+                                <ul class="subtree">
+                                    <li class="tree-item">
+                                        <span class="tree-label">Установки вакуумные для нанесения упрочняющих защитно-декоративных покрытий</span>
+                                    </li>
+                                    <li class="tree-item">
+                                        <span class="tree-label">Установки вакуумные для нанесения оптических покрытий</span>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="square">
+                    <div class="catalog-tree">
+                        <ul class="tree-menu">
+                            <li class="tree-item">
+                                <span class="tree-label"><h3>Технологические источники</h3></span>
+                                <ul class="subtree">
+                                    <li class="tree-item">
+                                        <span class="tree-label">Ионный источник</span>
+                                    </li>
+                                    <li class="tree-item">
+                                        <span class="tree-label">Магнетронный источник</span>
+                                    </li>
+                                    <li class="tree-item">
+                                        <span class="tree-label">Дуговой источник</span>
+                                        <li class="tree-item">
+                                            <span class="tree-label">Протяжный</span>
+                                        </li>
+                                        <li class="tree-item">
+                                            <span class="tree-label">Точечный</span>
+                                        </li>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="square">
+                    <div class="catalog-tree">
+                        <ul class="tree-menu">
+                            <li class="tree-item">
+                                <span class="tree-label"><h3>Комплектующие</h3></span>
+                            </li>
+                            <li class="tree-item">
+                                <span class="tree-label"><h3>Технологии</h3></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="search-container">
+            <div class="search-input-wrapper">
+                <img src="images/search.svg" alt="Search" class="search-icon">
+                <input type="text" placeholder="Поиск" class="search-input">
+            </div>
+        </div>
+        <section id="catalog-items">
+            <div class="catalog-page-tiles">
+                <!-- Catalog tiles will be dynamically generated here -->
+            </div>
+            <a href="#" id="show-more-button" class="catalog-button shadow-filter">Показать больше</a>
+        </section>
+        <footer>
+            <h3>ООО «ВТТ»</h3>
+            <p>Выполняем весь спектр работ<br>в области вакуумной техники<br>и технологий</p>
+            
+            <section id="arrow-list">
+                <ul class="arrow-bullet-list">
+                    <li><span class="arrow">→</span><h3>Вакуумные установки</h3></li>
+                    <li><span class="arrow">→</span><h3>Технологические источники</h3></li>
+                    <li><span class="arrow">→</span><h3>Комплектующие</h3></li>
+                    <li><span class="arrow">→</span><h3>Технологии</h3></li>
+                </ul>
+            </section>
+            <section id="contact-info">
+                <ul class="phone-list">
+                    <li>
+                        <span class="phone-icon">
+                            <img src="images/phone.svg">
+                        </span>
+                        <a href="tel:+375159241290">+375 15 9241290</a>
+                    </li>
+                    <li>
+                        <span class="phone-icon">
+                            <img src="images/phone.svg">
+                        </span>
+                        <a href="tel:++375291167806">+375 29 1167806</a>
+                    </li>
+                </ul>
+                <div class="address">
+                    <span class="address-icon">
+                        <img src="images/address.svg">
+                    </span>
+                    <span class="address-text">Республика Беларусь, г.Сморгонь.</span>
+                    <span class="address-text">проезд Я.Коласа 4</span>
+                </div>
+                <div class="mail">
+                    <span class="mail-icon">
+                        <img src="images/mail.svg">
+                    </span>
+                    <span class="mail-text">231042, Республика Беларусь</span>
+                    <span class="mail-text">г.Сморгонь. проезд Я.Коласа 4.</span>
+                </div>
+            </section>
+        </footer>
+    </div>
+    
+    <!-- Include the external JavaScript file -->
+    <script src="js/main.js"></script>
+    <script src="js/catalog.js"></script>
+</body>
+</html>

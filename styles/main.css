@@ -1010,6 +1010,7 @@ picture {
 
 #about h1 {
     padding: 4rem 0 2.5rem;
+    text-align: center;
 }
 
 #about img {
@@ -1035,4 +1036,21 @@ picture {
     .carousel-slide img {
         max-height: 400px; /* Limit height on medium screens */
     }
+}
+
+.vertical-squares {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.vertical-squares .square {
+    width: 100%;
+    height: auto;
+    border: 2px solid #2B8AC5;
+}
+
+.vertical-squares .square:not(:last-child) {
+    border-bottom: none;
 }

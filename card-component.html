@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>ООО ВТТ</title>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-touch-icon-152x152.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#2B8AC5">
+    <link rel="shortcut icon" href="favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#2B8AC5">
+    <meta name="msapplication-config" content="favicon/browserconfig.xml">
+    <meta name="theme-color" content="#2B8AC5">
+    <!-- Preload fonts for better performance -->
+    <link rel="preload" href="fonts/Rubik-Medium.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="fonts/Rubik-Regular.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="fonts/Rubik-Bold.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="stylesheet" href="styles/main.css?v=1.0.2">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <picture>
+                <source media="(max-width: 480px)" srcset="images/logo-small.svg">
+                <source media="(max-width: 768px)" srcset="images/logo-medium.svg">
+                <a href="./index.html">
+                    <img src="images/logo.svg" alt="VTT_SMARHON" style="width: 100px; height: auto;">
+                </a>
+            </picture>
+            <nav>
+                <div class="menu-toggle">
+                    <div class="menu-icon">
+                        <span class="line line-1"></span>
+                        <span class="line line-2"></span>
+                        <span class="line line-3"></span>
+                    </div>
+                    <span class="menu-text"></span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="./about.html" class="shadow-filter">О нас</a></li>
+                    <li><a href="./catalog.html" class="shadow-filter">Каталог</a></li>
+                    <li><a href="./contacts.html" class="shadow-filter">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="language-toggle">
+                <button class="lang-btn" data-current-lang="rus" data-toggle-lang="eng">ENG</button>
+            </div>
+        </header>
+        <section id="logo_background" class="logo_background">
+            <picture>
+                <source media="(max-width: 480px)" srcset="images/VTT-700-small.webp" type="image/webp">
+                <source media="(max-width: 480px)" srcset="images/VTT-700-small.png" type="image/png">
+                <source media="(max-width: 768px)" srcset="images/VTT-700-medium.webp" type="image/webp">
+                <source media="(max-width: 768px)" srcset="images/VTT-700-medium.png" type="image/png">
+                <source srcset="images/VTT-700.webp" type="image/webp">
+                <img src="images/VTT-700.png" alt="vtt_700" style="width: 100%; height: auto;">
+            </picture>
+        </section>
+        <footer>
+            <h3>ООО «ВТТ»</h3>
+            <p>Выполняем весь спектр работ<br>в области вакуумной техники<br>и технологий</p>
+            
+            <section id="arrow-list">
+                <ul class="arrow-bullet-list">
+                    <li><span class="arrow">→</span><h3>Вакуумные установки</h3></li>
+                    <li><span class="arrow">→</span><h3>Технологические источники</h3></li>
+                    <li><span class="arrow">→</span><h3>Комплектующие</h3></li>
+                    <li><span class="arrow">→</span><h3>Технологии</h3></li>
+                </ul>
+            </section>
+
+            <section id="contact-info">
+                <ul class="phone-list">
+                    <li>
+                        <span class="phone-icon">
+                            <img src="images/phone.svg">
+                        </span>
+                        <a href="tel:+375159241290">+375 15 9241290</a>
+                    </li>
+                    <li>
+                        <span class="phone-icon">
+                            <img src="images/phone.svg">
+                        </span>
+                        <a href="tel:++375291167806">+375 29 1167806</a>
+                    </li>
+                </ul>
+                <div class="address">
+                    <span class="address-icon">
+                        <img src="images/address.svg">
+                    </span>
+                    <span class="address-text">Республика Беларусь, г.Сморгонь.</span>
+                    <span class="address-text">проезд Я.Коласа 4</span>
+                </div>
+                <div class="mail">
+                    <span class="mail-icon">
+                        <img src="images/mail.svg">
+                    </span>
+                    <span class="mail-text">231042, Республика Беларусь</span>
+                    <span class="mail-text">г.Сморгонь. проезд Я.Коласа 4.</span>
+                </div>
+            </section>
+        </footer>
+    </div>
+    
+    <!-- Include the external JavaScript file -->
+    <script src="js/main.js"></script>
+</body>
+</html>
